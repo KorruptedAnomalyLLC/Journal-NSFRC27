@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0C02F3C322BBF3B6004E79AA /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C02F3C222BBF3B6004E79AA /* Entry+Convenience.swift */; };
 		0C02F3C522BBF47E004E79AA /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C02F3C422BBF47E004E79AA /* CoreDataStack.swift */; };
+		0C02F3C722BBF84C004E79AA /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C02F3C622BBF84C004E79AA /* EntryController.swift */; };
+		0C02F3CA22BC0038004E79AA /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C02F3C922BC0038004E79AA /* EntryListTableViewController.swift */; };
+		0C02F3CE22BC02D8004E79AA /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C02F3CD22BC02D8004E79AA /* EntryDetailViewController.swift */; };
 		FB72A4B622BBD7500097E7A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72A4B522BBD7500097E7A8 /* AppDelegate.swift */; };
 		FB72A4BB22BBD7500097E7A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB72A4B922BBD7500097E7A8 /* Main.storyboard */; };
 		FB72A4BE22BBD7500097E7A8 /* Journal_NSFRC27.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB72A4BC22BBD7500097E7A8 /* Journal_NSFRC27.xcdatamodeld */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		0C02F3C222BBF3B6004E79AA /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 		0C02F3C422BBF47E004E79AA /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0C02F3C622BBF84C004E79AA /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		0C02F3C922BC0038004E79AA /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		0C02F3CD22BC02D8004E79AA /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 		FB72A4B222BBD7500097E7A8 /* Journal+NSFRC27.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journal+NSFRC27.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB72A4B522BBD7500097E7A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB72A4BA22BBD7500097E7A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +45,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C02F3C822BBF851004E79AA /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C02F3C622BBF84C004E79AA /* EntryController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		0C02F3CB22BC003E004E79AA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C02F3C922BC0038004E79AA /* EntryListTableViewController.swift */,
+				0C02F3CD22BC02D8004E79AA /* EntryDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0C02F3CC22BC004D004E79AA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C02F3C822BBF851004E79AA /* Model Controller */,
+				0C02F3CB22BC003E004E79AA /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		FB72A4A922BBD7500097E7A8 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +93,7 @@
 				FB72A4CB22BBD7C40097E7A8 /* Model */,
 				FB72A4CA22BBD7B90097E7A8 /* Resources */,
 				FB72A4B922BBD7500097E7A8 /* Main.storyboard */,
+				0C02F3CC22BC004D004E79AA /* Controllers */,
 			);
 			path = "Journal+NSFRC27";
 			sourceTree = "<group>";
@@ -159,7 +192,10 @@
 			files = (
 				FB72A4BE22BBD7500097E7A8 /* Journal_NSFRC27.xcdatamodeld in Sources */,
 				0C02F3C322BBF3B6004E79AA /* Entry+Convenience.swift in Sources */,
+				0C02F3CA22BC0038004E79AA /* EntryListTableViewController.swift in Sources */,
+				0C02F3C722BBF84C004E79AA /* EntryController.swift in Sources */,
 				FB72A4B622BBD7500097E7A8 /* AppDelegate.swift in Sources */,
+				0C02F3CE22BC02D8004E79AA /* EntryDetailViewController.swift in Sources */,
 				0C02F3C522BBF47E004E79AA /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,13 +343,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = 5Z9AZ3J86W;
 				INFOPLIST_FILE = "$(SRCROOT)/Journal+NSFRC27/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wolfinsheepscoding.Journal-NSFRC27";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.austinwest.Journal-NSFRC27";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,13 +361,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = 5Z9AZ3J86W;
 				INFOPLIST_FILE = "$(SRCROOT)/Journal+NSFRC27/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wolfinsheepscoding.Journal-NSFRC27";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.austinwest.Journal-NSFRC27";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Entry List Table View Controller-->
         <scene sceneID="sYh-va-tO0">
             <objects>
-                <tableViewController id="KmU-au-bLy" sceneMemberID="viewController">
+                <tableViewController id="KmU-au-bLy" customClass="EntryListTableViewController" customModule="Journal_NSFRC27" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9nm-Wt-qNx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="900.00000000000011" y="24.776785714285712"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="zVg-Nt-URp">
             <objects>
-                <viewController id="Knb-2u-OIl" sceneMemberID="viewController">
+                <viewController id="Knb-2u-OIl" customClass="EntryDetailViewController" customModule="Journal_NSFRC27" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xcb-Cs-rtF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,6 +93,9 @@
                                     <constraint firstAttribute="height" constant="44" id="BRp-DD-pBD"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clearButtonTapped:" destination="Knb-2u-OIl" eventType="touchUpInside" id="dkF-0j-E5V"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -110,6 +113,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TbX-tq-SGY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="62e-PD-d6V">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="CEx-jg-a1W">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="Knb-2u-OIl" id="WjB-QW-hkv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="clearButtonTapped" destination="W96-cl-9m0" id="LB8-D8-WSI"/>
+                        <outlet property="entryBodyTextView" destination="g5g-jt-qY5" id="B4Z-pe-80o"/>
+                        <outlet property="entryTextField" destination="0fB-RW-bzp" id="y7K-DF-iAQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAx-Kg-VEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
