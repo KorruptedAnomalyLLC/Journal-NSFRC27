@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C02F3C322BBF3B6004E79AA /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C02F3C222BBF3B6004E79AA /* Entry+Convenience.swift */; };
+		0C02F3C522BBF47E004E79AA /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C02F3C422BBF47E004E79AA /* CoreDataStack.swift */; };
 		FB72A4B622BBD7500097E7A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72A4B522BBD7500097E7A8 /* AppDelegate.swift */; };
 		FB72A4BB22BBD7500097E7A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB72A4B922BBD7500097E7A8 /* Main.storyboard */; };
 		FB72A4BE22BBD7500097E7A8 /* Journal_NSFRC27.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB72A4BC22BBD7500097E7A8 /* Journal_NSFRC27.xcdatamodeld */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C02F3C222BBF3B6004E79AA /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
+		0C02F3C422BBF47E004E79AA /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		FB72A4B222BBD7500097E7A8 /* Journal+NSFRC27.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journal+NSFRC27.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB72A4B522BBD7500097E7A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB72A4BA22BBD7500097E7A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,7 +79,9 @@
 		FB72A4CB22BBD7C40097E7A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0C02F3C222BBF3B6004E79AA /* Entry+Convenience.swift */,
 				FB72A4BC22BBD7500097E7A8 /* Journal_NSFRC27.xcdatamodeld */,
+				0C02F3C422BBF47E004E79AA /* CoreDataStack.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB72A4BE22BBD7500097E7A8 /* Journal_NSFRC27.xcdatamodeld in Sources */,
+				0C02F3C322BBF3B6004E79AA /* Entry+Convenience.swift in Sources */,
 				FB72A4B622BBD7500097E7A8 /* AppDelegate.swift in Sources */,
+				0C02F3C522BBF47E004E79AA /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
